@@ -12082,14 +12082,14 @@ var __webpack_exports__ = {};
 
 const fs = __nccwpck_require__(7147);
 const core = __nccwpck_require__(869);
-const ghcontext = __nccwpck_require__(7457);
+const { context } = __nccwpck_require__(7457);
 const { Octokit } = __nccwpck_require__(2662);
 
 const jsonPath = core.getInput('input-file');
 const token = core.getInput('repo-token');
 
 const github = new Octokit({ auth: token });
-const { owner, repo } = ghcontext.context.repo;
+const { owner, repo } = context.repo;
 console.log(`owner: ${owner}, repo: ${repo}`)
 
 
@@ -12128,6 +12128,9 @@ function topicFromType(type) {
       break;
     case 'ca-gateway':
       topic = 'keyfactor-cagateway'
+      break;
+    case 'ca-anygateway':
+      topic = 'keyfactor-ca-anygateway'
       break;
     case 'pam':
       topic = 'keyfactor-pam'
