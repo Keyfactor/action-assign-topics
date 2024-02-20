@@ -12129,8 +12129,8 @@ function topicFromType(type) {
     case 'ca-gateway':
       topic = 'keyfactor-cagateway'
       break;
-    case 'ca-anygateway':
-      topic = 'keyfactor-ca-anygateway'
+    case 'anyca-gateway':
+      topic = 'keyfactor-anyca-gateway'
       break;
     case 'pam':
       topic = 'keyfactor-pam'
