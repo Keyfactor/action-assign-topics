@@ -1,6 +1,6 @@
 {
   "$schema": "https://keyfactor.github.io/integration-manifest-schema.json",
-  "integration_type": "anyca-gateway",
+  "integration_type": "anyca-plugin",
   "name": "WinCertStore Orchestrator",
   "status": "production",
   "link_github": true,

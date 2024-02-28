@@ -51,7 +51,7 @@ function topicFromType(type) {
     case 'ca-gateway':
       topic = 'keyfactor-cagateway'
       break;
-    case 'anyca-gateway':
+    case 'anyca-plugin':
       topic = 'keyfactor-anyca-gateway'
       break;
     case 'pam':
