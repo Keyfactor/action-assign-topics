@@ -12130,7 +12130,7 @@ function topicFromType(type) {
       topic = 'keyfactor-cagateway'
       break;
     case 'anyca-plugin':
-      topic = 'keyfactor-anyca-gateway'
+      topic = 'keyfactor-anyca-plugin'
       break;
     case 'pam':
       topic = 'keyfactor-pam'
